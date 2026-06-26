@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bKash AI Ticket Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>bKash AI Ticket Analyzer</h1>
+
+    <label>Complaint</label>
+
+    <textarea
+        id="complaint"
+        rows="5"
+        placeholder="Write the customer complaint here..."
+    ></textarea>
+
+    <label>Language</label>
+
+    <select id="language">
+        <option value="en">English</option>
+        <option value="bn">Bangla</option>
+        <option value="banglish">Banglish</option>
+    </select>
+
+    <label>Transaction ID</label>
+
+    <input
+        type="text"
+        id="transaction_id"
+        placeholder="TX1001"
+    >
+
+    <label>Amount</label>
+
+    <input
+        type="number"
+        id="amount"
+        placeholder="5000"
+    >
+
+    <label>Status</label>
+
+    <select id="status">
+        <option value="success">Success</option>
+        <option value="failed">Failed</option>
+    </select>
+
+    <button onclick="analyzeTicket()">
+        Analyze Ticket
+    </button>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
