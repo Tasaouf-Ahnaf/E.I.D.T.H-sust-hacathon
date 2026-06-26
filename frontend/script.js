@@ -32,7 +32,7 @@ async function analyzeTicket() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/analyze-ticket",
+            "https://e-i-d-t-h-sust-hacathon.onrender.com/analyze-ticket",
             {
                 method: "POST",
                 headers: {
